@@ -41,6 +41,10 @@ h6 {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
+h3{
+    font-size: 17px;
+}
+
 
 hr.star-light,
 hr.star-primary {
@@ -220,19 +224,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4dbcb', end
     }
 }
 
-#graphicdesign .portfolio-item {
+#portfolio .portfolio-item {
     right: 0;
     margin: 0 0 15px;
 }
 
-#graphicdesign .portfolio-item .portfolio-link {
+#portfolio .portfolio-item .portfolio-link {
     display: block;
     position: relative;
     margin: 0 auto;
     max-width: 400px;
 }
 
-#graphicdesign .portfolio-item .portfolio-link .caption {
+#portfolio .portfolio-item .portfolio-link .caption {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -243,11 +247,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4dbcb', end
     transition: all ease .5s;
 }
 
-#graphicdesign .portfolio-item .portfolio-link .caption:hover {
+#portfolio .portfolio-item .portfolio-link .caption:hover {
     opacity: 1;
 }
 
-#graphicdesign .portfolio-item .portfolio-link .caption .caption-content {
+#portfolio .portfolio-item .portfolio-link .caption .caption-content {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -258,78 +262,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4dbcb', end
     color: #fff;
 }
 
-#graphicdesign .portfolio-item .portfolio-link .caption .caption-content i {
+#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
     margin-top: -12px;
 }
 
-#graphicdesign .portfolio-item .portfolio-link .caption .caption-content h3,
-#graphicdesign .portfolio-item .portfolio-link .caption .caption-content h4 {
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
     margin: 0;
 }
 
-#graphicdesign * {
+#portfolio * {
     z-index: 2;
 }
 
 @media(min-width:767px) {
-    #graphicdesign .portfolio-item {
-        margin: 0 0 30px;
-    }
-}
-
-#webdesign .portfolio-item {
-    right: 0;
-    margin: 0 0 15px;
-}
-
-#webdesign .portfolio-item .portfolio-link {
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    max-width: 400px;
-}
-
-#webdesign .portfolio-item .portfolio-link .caption {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    background: #256A17;
-    -webkit-transition: all ease .5s;
-    -moz-transition: all ease .5s;
-    transition: all ease .5s;
-}
-
-#webdesign .portfolio-item .portfolio-link .caption:hover {
-    opacity: 1;
-}
-
-#webdesign .portfolio-item .portfolio-link .caption .caption-content {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    height: 20px;
-    margin-top: -12px;
-    text-align: center;
-    font-size: 20px;
-    color: #fff;
-}
-
-#webdesign .portfolio-item .portfolio-link .caption .caption-content i {
-    margin-top: -12px;
-}
-
-#webdesign .portfolio-item .portfolio-link .caption .caption-content h3,
-#webdesign .portfolio-item .portfolio-link .caption .caption-content h4 {
-    margin: 0;
-}
-
-#webdesign * {
-    z-index: 2;
-}
-
-@media(min-width:767px) {
-    #webdesign .portfolio-item {
+    #portfolio .portfolio-item {
         margin: 0 0 30px;
     }
 }
@@ -384,17 +331,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4dbcb', end
     z-index: 2;
 }
 
+.form-control {
+    border:1px solid #ae5f37;
+}
+
 @media(min-width:767px) {
     #finearts .fineartss-item {
         margin: 0 0 30px;
     }
 }
-
-.form-control {
-border: 1px solid #AE5F37;
-
-
-
 
 .btn-outline {
     margin-top: 15px;
@@ -481,6 +426,10 @@ footer {
     color: #fff;
 }
 
+footer p {
+    font-size: 12px;
+}
+
 footer h3 {
     margin-bottom: 30px;
 }
@@ -537,7 +486,7 @@ footer .footer-below {
     outline: 0;
 }
 
-.graphicdesign-modal .modal-content {
+.portfolio-modal .modal-content {
     padding: 100px 0;
     min-height: 100%;
     border: 0;
@@ -546,23 +495,23 @@ footer .footer-below {
     background-clip: border-box;
     -webkit-box-shadow: none;
     box-shadow: none;
-    background-color: #E4DBCB ;
+    background-color:#E4DBCB;s
 }
 
-.graphicdesign-modal .modal-content h2 {
+.portfolio-modal .modal-content h2 {
     margin: 0;
     font-size: 1.75em;
 }
 
-.graphicdesign-modal .modal-content img {
+.portfolio-modal .modal-content img {
     margin-bottom: 30px;
 }
 
-.graphicdesign-modal .modal-content .item-details {
+.portfolio-modal .modal-content .item-details {
     margin: 30px 0;
 }
 
-.graphicdesign-modal .close-modal {
+.portfolio-modal .close-modal {
     position: absolute;
     top: 25px;
     right: 25px;
@@ -572,11 +521,11 @@ footer .footer-below {
     cursor: pointer;
 }
 
-.graphicdesign-modal .close-modal:hover {
+.portfolio-modal .close-modal:hover {
     opacity: .3;
 }
 
-.graphicdesign-modal .close-modal .lr {
+.portfolio-modal .close-modal .lr {
     z-index: 1051;
     width: 1px;
     height: 75px;
@@ -587,71 +536,7 @@ footer .footer-below {
     transform: rotate(45deg);
 }
 
-.graphicdesign-modal .close-modal .lr .rl {
-    z-index: 1052;
-    width: 1px;
-    height: 75px;
-    background-color: #2c3e50;
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-}
-
-
-
-
-
-.webdesign-modal .modal-content {
-    padding: 100px 0;
-    min-height: 100%;
-    border: 0;
-    border-radius: 0;
-    text-align: center;
-    background-clip: border-box;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    background-color: #E4DBCB;
-}
-
-.webdesign-modal .modal-content h2 {
-    margin: 0;
-    font-size: 1.75em;
-}
-
-.webdesign-modal .modal-content img {
-    margin-bottom: 30px;
-}
-
-.webdesign-modal .modal-content .item-details {
-    margin: 30px 0;
-}
-
-.webdesign-modal .close-modal {
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    width: 75px;
-    height: 75px;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.webdesign-modal .close-modal:hover {
-    opacity: .3;
-}
-
-.webdesign-modal .close-modal .lr {
-    z-index: 1051;
-    width: 1px;
-    height: 75px;
-    margin-left: 35px;
-    background-color: #2c3e50;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
-.webdesign-modal .close-modal .lr .rl {
+.portfolio-modal .close-modal .lr .rl {
     z-index: 1052;
     width: 1px;
     height: 75px;
@@ -670,7 +555,6 @@ footer .footer-below {
     background-clip: border-box;
     -webkit-box-shadow: none;
     box-shadow: none;
-    background-color: #E4DBCB;
 }
 
 .finearts-modal .modal-content h2 {
