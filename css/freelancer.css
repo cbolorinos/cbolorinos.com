@@ -220,19 +220,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4dbcb', end
     }
 }
 
-#portfolio .portfolio-item {
+#graphicdesign .portfolio-item {
     right: 0;
     margin: 0 0 15px;
 }
 
-#portfolio .portfolio-item .portfolio-link {
+#graphicdesign .portfolio-item .portfolio-link {
     display: block;
     position: relative;
     margin: 0 auto;
     max-width: 400px;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption {
+#graphicdesign .portfolio-item .portfolio-link .caption {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -243,11 +243,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4dbcb', end
     transition: all ease .5s;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption:hover {
+#graphicdesign .portfolio-item .portfolio-link .caption:hover {
     opacity: 1;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+#graphicdesign .portfolio-item .portfolio-link .caption .caption-content {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -258,21 +258,78 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4dbcb', end
     color: #fff;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+#graphicdesign .portfolio-item .portfolio-link .caption .caption-content i {
     margin-top: -12px;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
-#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+#graphicdesign .portfolio-item .portfolio-link .caption .caption-content h3,
+#graphicdesign .portfolio-item .portfolio-link .caption .caption-content h4 {
     margin: 0;
 }
 
-#portfolio * {
+#graphicdesign * {
     z-index: 2;
 }
 
 @media(min-width:767px) {
-    #portfolio .portfolio-item {
+    #graphicdesign .portfolio-item {
+        margin: 0 0 30px;
+    }
+}
+
+#webdesign .portfolio-item {
+    right: 0;
+    margin: 0 0 15px;
+}
+
+#webdesign .portfolio-item .portfolio-link {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+#webdesign .portfolio-item .portfolio-link .caption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: #256A17;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+}
+
+#webdesign .portfolio-item .portfolio-link .caption:hover {
+    opacity: 1;
+}
+
+#webdesign .portfolio-item .portfolio-link .caption .caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 20px;
+    margin-top: -12px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+#webdesign .portfolio-item .portfolio-link .caption .caption-content i {
+    margin-top: -12px;
+}
+
+#webdesign .portfolio-item .portfolio-link .caption .caption-content h3,
+#webdesign .portfolio-item .portfolio-link .caption .caption-content h4 {
+    margin: 0;
+}
+
+#webdesign * {
+    z-index: 2;
+}
+
+@media(min-width:767px) {
+    #webdesign .portfolio-item {
         margin: 0 0 30px;
     }
 }
@@ -332,6 +389,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4dbcb', end
         margin: 0 0 30px;
     }
 }
+
+.form-control {
+border: 1px solid #AE5F37;
+
+
+
 
 .btn-outline {
     margin-top: 15px;
@@ -474,7 +537,7 @@ footer .footer-below {
     outline: 0;
 }
 
-.portfolio-modal .modal-content {
+.graphicdesign-modal .modal-content {
     padding: 100px 0;
     min-height: 100%;
     border: 0;
@@ -483,23 +546,23 @@ footer .footer-below {
     background-clip: border-box;
     -webkit-box-shadow: none;
     box-shadow: none;
-    background-color:#E4DBCB;s
+    background-color: #E4DBCB ;
 }
 
-.portfolio-modal .modal-content h2 {
+.graphicdesign-modal .modal-content h2 {
     margin: 0;
     font-size: 1.75em;
 }
 
-.portfolio-modal .modal-content img {
+.graphicdesign-modal .modal-content img {
     margin-bottom: 30px;
 }
 
-.portfolio-modal .modal-content .item-details {
+.graphicdesign-modal .modal-content .item-details {
     margin: 30px 0;
 }
 
-.portfolio-modal .close-modal {
+.graphicdesign-modal .close-modal {
     position: absolute;
     top: 25px;
     right: 25px;
@@ -509,11 +572,11 @@ footer .footer-below {
     cursor: pointer;
 }
 
-.portfolio-modal .close-modal:hover {
+.graphicdesign-modal .close-modal:hover {
     opacity: .3;
 }
 
-.portfolio-modal .close-modal .lr {
+.graphicdesign-modal .close-modal .lr {
     z-index: 1051;
     width: 1px;
     height: 75px;
@@ -524,7 +587,71 @@ footer .footer-below {
     transform: rotate(45deg);
 }
 
-.portfolio-modal .close-modal .lr .rl {
+.graphicdesign-modal .close-modal .lr .rl {
+    z-index: 1052;
+    width: 1px;
+    height: 75px;
+    background-color: #2c3e50;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+
+
+
+
+.webdesign-modal .modal-content {
+    padding: 100px 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: center;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: #E4DBCB;
+}
+
+.webdesign-modal .modal-content h2 {
+    margin: 0;
+    font-size: 1.75em;
+}
+
+.webdesign-modal .modal-content img {
+    margin-bottom: 30px;
+}
+
+.webdesign-modal .modal-content .item-details {
+    margin: 30px 0;
+}
+
+.webdesign-modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.webdesign-modal .close-modal:hover {
+    opacity: .3;
+}
+
+.webdesign-modal .close-modal .lr {
+    z-index: 1051;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    background-color: #2c3e50;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.webdesign-modal .close-modal .lr .rl {
     z-index: 1052;
     width: 1px;
     height: 75px;
@@ -543,6 +670,7 @@ footer .footer-below {
     background-clip: border-box;
     -webkit-box-shadow: none;
     box-shadow: none;
+    background-color: #E4DBCB;
 }
 
 .finearts-modal .modal-content h2 {
