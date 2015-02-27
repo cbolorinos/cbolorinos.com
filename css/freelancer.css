@@ -331,12 +331,68 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4dbcb', end
     z-index: 2;
 }
 
+
+
+
+
+
+#graphicdesign .graphicdesign-item {
+    right: 0;
+    margin: 0 0 15px;
+}
+
+#graphicdesign .graphicdesign-item .graphicdesign-link {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+#graphicdesign .graphicdesign-item .graphicdesign-link .caption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: #256A17;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+}
+
+#graphicdesign .graphicdesign-item .graphicdesign-link .caption:hover {
+    opacity: 1;
+}
+
+#graphicdesign .graphicdesign-item .graphicdesign-link .caption .caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 20px;
+    margin-top: -12px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+#graphicdesign .graphicdesign-item .graphicdesign-link .caption .caption-content i {
+    margin-top: -12px;
+}
+
+#graphicdesign .graphicdesign-item .graphicdesign-link .caption .caption-content h3,
+#graphicdesign .graphicdesign-item .graphicdesign-link .caption .caption-content h4 {
+    margin: 0;
+}
+
+#graphicdesign * {
+    z-index: 2;
+}
+
 .form-control {
     border:1px solid #ae5f37;
 }
 
 @media(min-width:767px) {
-    #finearts .fineartss-item {
+    #graphicdesign .graphicdesign-item {
         margin: 0 0 30px;
     }
 }
@@ -596,6 +652,70 @@ footer .footer-below {
 }
 
 .finearts-modal .close-modal .lr .rl {
+    z-index: 1052;
+    width: 1px;
+    height: 75px;
+    background-color: #2c3e50;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+
+
+
+
+
+.graphicdesign-modal .modal-content {
+    padding: 100px 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: center;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.graphicdesign-modal .modal-content h2 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.graphicdesign-modal .modal-content img {
+    margin-bottom: 30px;
+}
+
+.graphicdesign-modal .modal-content .item-details {
+    margin: 30px 0;
+}
+
+.graphicdesign-modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.graphicdesign-modal .close-modal:hover {
+    opacity: .3;
+}
+
+.graphicdesign-modal .close-modal .lr {
+    z-index: 1051;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    background-color: #2c3e50;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.graphicdesign-modal .close-modal .lr .rl {
     z-index: 1052;
     width: 1px;
     height: 75px;
