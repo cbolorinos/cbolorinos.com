@@ -58,7 +58,7 @@ if (isset($error)) {
     
 }
 
-$headers = "From: jbolorinos@gmail.com\r\n"; 
+$headers = "From: cbolorinos@gmail.com\r\n"; 
 $headers .= "Reply-To: $email_address\r\n";
 
 // write the email content

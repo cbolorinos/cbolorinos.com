@@ -118,6 +118,16 @@ header .intro-text .skills {
     font-weight: 300;
 }
 
+.navbar-default .navbar-toggle {
+    border-color: #AE5F37;
+}
+.navbar-default .navbar-toggle:hover {
+    background-color: #256A17;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:active, .navbar-default .navbar-toggle:visited {
+    background-color: #256A17;
+}
+
 @media(min-width:768px) {
     header .container {
         padding-top: 200px;
@@ -193,8 +203,12 @@ color: #E4DBCB;
     background-color: #E4DBCB;
 }
 
+.form-control:focus{
+    border-color:#AE5F37;
+}
+
 section {
-    padding: 100px 0;
+    padding: 40px 0;
 }
 
 section h2 {
