@@ -69,6 +69,6 @@ $email_content .= "Message:\n\n$message";
     
 // send the email
 //ENTER YOUR INFORMATION BELOW FOR THE FORM TO WORK!
-mail ('cbolorinos@gmail.com', 'Cebolorinos - Contact Form Submission', $email_content, $headers);
+mail ('cbolorinos@gmail.com', 'Cbolorinos - Contact Form Submission', $email_content, $headers);
     
 ?>
