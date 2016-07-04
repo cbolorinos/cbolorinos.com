@@ -603,6 +603,8 @@ SOCIAL ICON
     position: relative;
     background: url(../../assets/images/photo-frame.png) bottom center no-repeat;
     background-size: contain;
+    max-width: 360px;
+    margin: auto;
 }
 
 .myphoto img{
