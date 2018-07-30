@@ -884,6 +884,9 @@ Resume Timeline
     background: #68c3a3;
     color: #fff;
 }
+.timeline>li .timeline-content:hover a{
+    color: #bcecff;
+}
 
 .timeline>li .timeline-panel::before,
 .timeline>li.timeline-inverted .timeline-panel::before {
@@ -1237,7 +1240,7 @@ Resume Timeline
     left: 0;
     background-color: #68c3a3;
     color: #fff;
-    height: 45px;
+    height: 100%;
     width: 100%;
     text-align: center;
 }
@@ -1259,9 +1262,12 @@ Resume Timeline
     line-height: 45px;
     font-weight: 700;
     margin: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-
+.modal-body p {margin-top: 15px;}
 /*PopUp fade effect*/
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
